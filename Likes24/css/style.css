@@ -1,0 +1,358 @@
+body {
+    margin: 0;
+    padding: 0;
+    position: relative;
+}
+*{
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+ul {
+    list-style: none;
+    margin:0;
+    padding:0;
+}
+h1,h2,h3{
+    margin:0;
+}
+p{
+    padding:0;
+    margin:0;
+    font-size:small
+}
+
+:root {
+    --BeigeColor: #B48F62;
+    --LightBeige: #FFFDF1;
+    --GreenColor: #43A1A8;
+    --GreeColor_Hover: #1E7C83;
+    --BrownColor: #B48F62;
+
+}
+
+.Main {
+    margin: 0;
+    padding: 0;
+    height: 100vh;
+    background-image: url(../svg/BG_Graphic.svg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+    display: grid;
+    grid-template-columns: 1fr;
+    grid-template-rows: auto 1fr;
+}
+
+.Main .headContainer {
+    position:sticky;
+    top:0;
+    background-color: white;
+    height: fit-content;
+    border-bottom: solid 2px var(--BeigeColor);
+    padding: 10px 200px;
+    display: flex;
+    justify-content: space-between;
+    box-shadow: 0px 0px 10px rgba(0 ,0, 0, 0.1);
+}
+/*Head CSS Style*/
+.Main .headContainer ul {
+    display: flex;
+    align-items: center;
+
+}
+
+.Main .headContainer .MenuList{
+    display: flex;
+    align-items: center;
+}
+.Main .headContainer .MenuList ul li {
+    margin: 0 20px;
+
+}
+.Main .headContainer ul li label {
+    font-weight: bold;
+}
+
+.Main .headContainer ul li .placeBtn {
+    background-color: var(--GreenColor);
+    color: white;
+    padding: 8px 50px;
+    font-weight: bold;
+    border: none;
+    border-radius: 8px;
+    cursor: pointer;
+}
+.Main .headContainer ul li .placeBtn:hover {
+   background-color: var(--GreeColor_Hover);
+}
+
+/*Hero CSS Style*/
+.Main .HeronContainer{
+    display: grid;
+    grid-template-rows: 1fr auto auto;
+    grid-template-columns:  1fr;
+    margin: 10px 200px;
+}
+.Main .HeronContainer .TopCont{
+    display: grid;
+    grid-template-rows:  1fr;
+    grid-template-columns:1fr  1fr;
+}
+.Main .HeronContainer .TopCont .WriteCont{
+    display: flex;
+    align-items: center;
+}
+.Main .HeronContainer .TopCont .WriteCont ul{
+    display: flex;
+    flex-direction: column;
+    color: var(--BrownColor);
+}
+.Main .HeronContainer .TopCont .WriteCont 
+ul li h1{
+    margin:0;
+    font-size:50px; 
+}
+.Main .HeronContainer .TopCont .Login{
+    background-color: white;
+    margin:20px;
+    border-radius: 20px;
+    box-shadow: 0px 0px 10px rgba(0 ,0, 0, 0.1);
+}
+.Main .HeronContainer .SmmCont{
+ padding:45px 0;
+}
+
+.Main .HeronContainer .SmmCont .Title{
+    display: flex;
+    justify-content: center;
+    color: white;
+    padding:20px 0;
+}
+.Main .HeronContainer .SmmCont .smmBoxCont{
+    display: grid;
+    grid-template-rows: 1fr;
+    grid-template-columns: 1fr 1fr 1fr 1fr 1fr;
+    gap: 20px;
+    
+    height: fit-content;
+}
+ 
+.Main .HeronContainer .SmmCont .smmBoxCont .box{
+    background-color: white;
+   display: grid;
+   grid-template-columns: 1fr;
+   grid-template-rows:1fr auto auto;
+   padding:30px 10px;
+   border-radius: 8px;
+   transition: 100ms ease-in-out;
+}
+.Main .HeronContainer .SmmCont .smmBoxCont .box:hover{
+   transform: scale(1.05);
+   box-shadow: 0px 0px 15px rgba(0 ,0, 0, 0.3);
+}
+ 
+.Main .HeronContainer .SmmCont .smmBoxCont .box .icon{
+    height: 60px;
+    width: 60px; 
+    display: flex;
+    justify-self: center;
+    align-self: center;
+    border-radius: 50%; 
+    margin:20px 0;
+}
+.Main .HeronContainer .SmmCont .smmBoxCont .box .writing{ 
+    display: flex;
+    justify-content: center;
+ }
+.Main .HeronContainer .SmmCont .smmBoxCont .box .writing span{ 
+   text-align: center;
+}
+.Main .HeronContainer .SmmCont .smmBoxCont .box .btnCont{ 
+    text-align: center;
+    margin:10px 0;
+ }
+ .Main .HeronContainer .SmmCont .smmBoxCont .box .btnCont .priceBtn{ 
+    border:none;
+    background-color: rgba(0, 0, 0, 0.1);
+    padding:6px 15px;
+    border:solid 2px #ccc;
+    border-radius:6px;
+    cursor: pointer;
+ }
+
+ .Main .HeronContainer .buttonSec{
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    grid-template-rows: 1fr;
+    height: 6rem;
+ }
+
+ .Main .HeronContainer .buttonSec{
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    grid-template-rows: 1fr;
+    height: fit-content;
+ }
+ .Main .HeronContainer .buttonSec .col{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding:10px 0;
+ }
+ .Main .HeronContainer .buttonSec .col .awardIcon img{
+     
+    height: 100px;
+ }
+ 
+ .Main .HeronContainer .buttonSec .col .detailsCont{
+    padding:0 10px;
+    color:white;
+ }
+ .Main .HeronContainer .buttonSec .col .detailsCont p{
+    margin:10px 0;
+ }
+
+ .StartGuide{ 
+    height: fit-content;
+    background-color: var(--LightBeige);
+    padding:50px 200px;
+    
+    display: grid;
+    grid-template-columns: 1fr;
+    grid-template-rows: auto auto; 
+ }
+ .StartGuide .title ul{
+    text-align: center;
+    color: var(--BrownColor);
+ }
+ .StartGuide .boxCont{
+   display: grid;
+   grid-template-columns: 1fr 1fr 1fr 1fr;
+   grid-template-rows: 1fr;
+   gap:15px;
+   margin:20px 0;
+  
+}
+.StartGuide .boxCont .col{
+    display: inline-flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    background-color: white;
+    padding:20px;
+    border-radius: 8px;
+    box-shadow: 0px 0px 15px rgba(0 ,0, 0, 0.1); 
+}
+.StartGuide .boxCont .col .icon{
+    margin:10px;
+    height: 80px;
+    width: 80px;
+    border-radius: 50%;
+    background-color: var(--GreenColor);   
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: white;
+ }
+ .StartGuide .boxCont .col .Detialed{
+    width: 80%;
+ }
+ .StartGuide .boxCont .col .Detialed p{
+    text-align: center;
+   font-size:x-large;
+   padding:35px 0;
+ }
+
+ .CommentsBox{
+    padding:40px 200px; 
+    background-color: var(--LightBeige);
+ }
+
+ .CommentsBox .title ul{
+    text-align: center;
+    color: var(--BrownColor);
+ }
+ .CommentsBox .CarouselCont{ 
+    margin:20px 0;  
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr 1fr; 
+    gap:20px;
+    
+    
+ }
+ .CommentsBox .CarouselCont .BoxCol{
+    border-radius: 8px;
+    background-color: white;
+    box-shadow: 0px 0px 15px rgba(0 ,0, 0, 0.1); 
+    display: grid;
+    grid-template-columns: 1fr;
+    grid-template-rows: auto 1fr;
+    padding:20px;
+ }
+ .CommentsBox .CarouselCont .BoxCol .user{
+    display: flex; 
+    justify-content: space-between;
+    align-items: center;
+ }
+ .CommentsBox .CarouselCont .BoxCol .user .profileImg{
+    width:60px;
+    height: 60px;
+    border-radius: 50%;
+    background-color:var(--GreenColor);
+    display: flex; 
+    justify-content: center;
+    align-items: center;
+    font-size: xx-large;
+    color:white
+ }
+ .CommentsBox .CarouselCont .BoxCol .user label{
+    font-size: larger;
+ }
+ .CommentsBox .CarouselCont .BoxCol .commentsCont{
+    padding:40px 0;
+ }
+ .CommentsBox .CarouselCont .BoxCol .commentsCont p {
+     font-size: medium;
+     line-height: 1.5;
+ }
+
+/* 
+ ---------------------------------------------------- */
+ .QuestionCont{
+    display: grid;
+    grid-template-columns: 1fr;
+    grid-template-rows: auto 1fr;
+    padding:10px 200px;
+    height: 500px;
+    background-color: var(--GreenColor);
+   
+ }
+ .QuestionCont .Title{
+     color: white;
+     padding:20px 0;
+    }
+ .QuestionCont .QuestionBox{
+    display: grid;
+    grid-template-columns: 1fr;
+    grid-template-rows: 1fr 1fr 1fr 1fr;
+    gap: 20px;
+     
+}
+.QuestionCont .QuestionBox .row{
+  background-color: white;
+  border-radius: 8px;
+  box-shadow: 0px 0px 10px rgba(0 ,0, 0, 0.1);
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding:20px;
+}
+.QuestionCont .QuestionBox .row label{ 
+ font-size: 20px;
+  }
+  .QuestionCont .QuestionBox .row .iconBtn{
+    background: none; 
+     border:none;
+     font-size:x-large;
+     color:var(--GreenColor);
+     }
